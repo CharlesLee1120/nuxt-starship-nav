@@ -91,6 +91,13 @@ export const categories: Category[] = [
 ]
 ```
 
----
+## ️ ❤️ 致谢
+- [Nuxt 4](https://nuxt.com/docs/4.x/getting-started/installation)
+- [Google Antigravity](https://antigravity.google/)
+- [Google Gemini 3 Pro](https://gemini.google.com/app)
 
-Made with ❤️ by Nuxt 4
+## 📄 License
+
+本项目采用 MIT License 开源协议，任何人都可以自由使用、修改和分发本项目。
+
+详见 [MIT License](https://opensource.org/licenses/MIT)。
