@@ -1,6 +1,6 @@
 # 星舰导航
 
-🚀星舰导航，一个基于 Nuxt 4 构建的现代化、高颜值导航站。无外部数据库依赖，支持部署到Vercel。
+🚀星舰导航，一个基于 Nuxt 4 构建的现代化、高颜值导航站。
 
 ## ✨ 特性
 
@@ -55,6 +55,10 @@ pnpm build
 ```bash
 pnpm preview
 ```
+
+## 部署到Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CharlesLee1120/Nuxt-Starship-Nav)
 
 ## 📝 数据管理
 
