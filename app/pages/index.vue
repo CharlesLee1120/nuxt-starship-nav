@@ -2,10 +2,10 @@
 import { categories } from '~/data/sites'
 
 useSeoMeta({
-  title: 'Starship Nav - 开发者导航',
-  description: '一个简洁美观的开发者导航站，收录常用工具、开发框架和设计资源。',
-  ogTitle: 'Starship Nav - 开发者导航',
-  ogDescription: '一个简洁美观的开发者导航站，收录常用工具、开发框架和设计资源。',
+  title: 'Starship Nav - 星舰导航',
+  description: '一个简洁美观的导航站，收录常用工具、开发框架和设计资源。',
+  ogTitle: 'Starship Nav - 星舰导航',
+  ogDescription: '一个简洁美观的导航站，收录常用工具、开发框架和设计资源。',
 })
 
 /**
@@ -17,7 +17,7 @@ const searchQuery = ref('')
 /**
  * 根据搜索关键词过滤后的分类列表
  * Filtered categories based on search query
- * 
+ *
  * @returns {Array} 过滤后的分类列表
  */
 const filteredCategories = computed(() => {
@@ -26,12 +26,12 @@ const filteredCategories = computed(() => {
   const query = searchQuery.value.toLowerCase()
   return categories.map(category => {
     // 过滤分类下的站点
-    const filteredSites = category.sites.filter(site => 
-      site.title.toLowerCase().includes(query) || 
+    const filteredSites = category.sites.filter(site =>
+      site.title.toLowerCase().includes(query) ||
       site.desc.toLowerCase().includes(query) ||
       site.url.toLowerCase().includes(query)
     )
-    
+
     // 返回包含过滤后站点的新分类对象
     return {
       ...category,
@@ -51,10 +51,10 @@ const filteredCategories = computed(() => {
           <div class="pl-4 text-slate-400">
             <Icon name="ph:magnifying-glass-bold" class="text-xl" />
           </div>
-          <input 
+          <input
             v-model="searchQuery"
-            type="text" 
-            placeholder="搜索站点、描述或 URL..." 
+            type="text"
+            placeholder="搜索站点、描述或 URL..."
             class="w-full py-4 px-4 bg-transparent border-none focus:ring-0 text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none"
           />
           <div v-if="searchQuery" class="pr-4 cursor-pointer text-slate-400 hover:text-slate-600 dark:hover:text-slate-200" @click="searchQuery = ''">
@@ -76,12 +76,12 @@ const filteredCategories = computed(() => {
             {{ category.sites.length }} 个站点
           </span>
         </div>
-        
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <SiteCard 
-            v-for="site in category.sites" 
-            :key="site.url" 
-            :site="site" 
+          <SiteCard
+            v-for="site in category.sites"
+            :key="site.url"
+            :site="site"
           />
         </div>
       </section>
