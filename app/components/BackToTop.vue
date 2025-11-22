@@ -26,10 +26,10 @@ onUnmounted(() => {
     <button
       v-if="show"
       @click="scrollToTop"
-      class="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-white/80 dark:bg-dark-surface/80 backdrop-blur-md border border-slate-200 dark:border-dark-border shadow-lg text-primary-500 hover:bg-primary-50 dark:hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1"
+      class="fixed bottom-10 right-10 z-50 p-4 rounded-full bg-white/90 dark:bg-dark-surface/90 backdrop-blur-xl border border-slate-200 dark:border-dark-border shadow-xl hover:shadow-2xl text-primary-600 dark:text-primary-400 hover:scale-110 active:scale-95 transition-all duration-300 group"
       aria-label="Back to top"
     >
-      <Icon name="ph:arrow-up-bold" class="text-xl" />
+      <Icon name="ph:arrow-up-bold" class="text-2xl group-hover:-translate-y-1 transition-transform duration-300" />
     </button>
   </Transition>
 </template>
