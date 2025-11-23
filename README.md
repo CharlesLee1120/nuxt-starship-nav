@@ -60,7 +60,7 @@ pnpm build
 pnpm preview
 ```
 
-## 部署到托管平台
+## ☁️ 部署到托管平台
 
 ### 部署到 Vercel
 
