@@ -2,6 +2,8 @@
 
 🚀星舰导航，一个基于 Nuxt 4 构建的现代化、高颜值导航站。
 
+![preview.png](preview.png)
+
 ## ✨ 特性
 
 - **最新技术栈**：采用 Nuxt 4 + Vue 3 + TypeScript 开发。
