@@ -39,9 +39,16 @@ const filteredCategories = computed(() => {
     }
   }).filter(category => category.sites.length > 0) // 只保留有匹配站点的分类
 })
+
+/**
+ * 公告内容
+ * Notice message
+ */
+const noticeMessage = ref('欢迎访问 Starship Nav！这是一个示例公告，将在 1 分钟后自动关闭。')
 </script>
 
 <template>
+  <NoticeBar :message="noticeMessage" />
   <div class="container mx-auto px-4 py-8 space-y-12">
     <!-- Search Section -->
     <div class="max-w-2xl mx-auto mb-12 relative">
