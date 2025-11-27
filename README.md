@@ -33,7 +33,7 @@
 ### 安装依赖
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### 开发环境
@@ -41,7 +41,7 @@ pnpm install
 启动本地开发服务器：
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 访问 http://localhost:3000 即可预览。
@@ -51,13 +51,13 @@ pnpm dev
 构建生产环境代码：
 
 ```bash
-pnpm build
+npm run build
 ```
 
 预览构建产物：
 
 ```bash
-pnpm preview
+npm run preview
 ```
 
 ## ☁️ 部署到托管平台
